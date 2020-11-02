@@ -18,6 +18,18 @@
       width: 100%;
       box-sizing: border-box;
     }
+
+    .functions {
+      padding-top: 4rem;
+    }
+
+    .header {
+      margin-top: 7rem;
+    }
+
+    .backslash {
+      margin-top: 2rem;
+    }
 }
 
 @media screen and (max-width: 903px) {
