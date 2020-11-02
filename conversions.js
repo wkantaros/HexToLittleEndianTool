@@ -1,6 +1,8 @@
 tle_btn = document.getElementById('toLittleEndianBtn');
+tle_in = document.getElementById('toLittleEndian');
 tle_op = document.getElementById('toLittleEndianOutput');
 abs_btn = document.getElementById('addBackslashBtn');
+abs_in = document.getElementById('addBackslash');
 abs_op = document.getElementById('addBackslashOutput');
 
 tle_btn.addEventListener('click', () => {
@@ -18,6 +20,19 @@ abs_btn.addEventListener('click', () => {
   abs_op.value = add_backslash(input);
 });
 
+// execute same code on enter as well
+tle_in.addEventListener("keyup", (event) => {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    tle_btn.click();
+  }
+});
+abs_in.addEventListener("keyup", (event) => {
+  if (event.keyCode === 13) {
+    event.preventDefault();
+    abs_btn.click();
+  }
+});
 
 let littleEndian = (address) => {  
   if (address.length < 8){
