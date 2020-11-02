@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css">
+  <title>1650 Cybersecurity</title>
+</head>
+
+<body>
+  <div class="container">
+    <section class="header">
+      <h2 class="title">A simple tool to convert hex addresses to little endian</h2>
+    </section>
+    <section class="functions">
+      <div class="row">
+        <div class="six columns">
+          <label for="toLittleEndian">hex address to c-formatted little-endian:</label>
+          <input class="u-full-width" type="text" placeholder="Input: 0x9fa5501" id="toLittleEndian">
+        </div>
+        <div class="six columns">
+          <label for="addBackslash">add backslashes to (c-format) hex numbers:</label>
+          <input class="u-full-width" type="text" placeholder="Input: 21c8717d7a790a" id="addBackslash">
+        </div>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <input class="u-full-width" type="text" placeholder="Output: \x01\x50\xa5\x9f" id="toLittleEndianOutput" readonly>
+        </div>
+        <div class="six columns">
+          <input class="u-full-width" type="text" placeholder="Output: \x21\xc8\x71\x7d\x7a\x79\x0a" id="addBackslashOutput" readonly>
+        </div>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <button class="button-primary" id="toLittleEndianBtn">Submit</button>
+        </div>
+        <div class="six columns">
+          <button class="button-primary" id="addBackslashBtn">Submit</button>
+        </div>
+      </div>
+      <!-- <div class="row">
+        <div class="six columns">
+          <input class="u-full-width" type="text" placeholder="Output: \x01\x50\xa5\x9f" id="toLittleEndian">
+        </div>
+        <div class="six columns">
+          <input class="u-full-width" type="text" placeholder="Output: \x21\xc8\x71\x7d\x7a\x79\x0a" id="toLittleEndian">
+        </div>
+      </div> -->
+    </section>
+  </div>
+  <script src="conversions.js"></script>
+</body>
+</html>
