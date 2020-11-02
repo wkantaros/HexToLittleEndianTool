@@ -12,3 +12,16 @@
   border-top: 1px solid #eee;
   padding-top: 10rem;
 }
+
+@media screen and (max-width: 600px) {
+    button {
+      width: 100%;
+      box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 903px) {
+    .c-format {
+      display: none;
+    }
+}
