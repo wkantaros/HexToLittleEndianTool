@@ -37,3 +37,10 @@
       display: none;
     }
 }
+
+.footer {
+  position: absolute;
+  /* left: 10px; */
+  bottom: 20px;
+  left: 40px
+}
